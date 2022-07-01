@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid p{
+    font-size: 2rem;
+    font-family: cursive;
+    font-style: italic;
+    width: 20cm;
+    color: rgb(97, 92, 92);
+    position: absolute;
+    top:20%;
+    margin-right: 50%;
+    margin-top: 5%;
+    left: 8%;
+    transform: translate(-20, -10px);
+    
+}
+
+.card{
+    width: 5cm;
+    
+}
