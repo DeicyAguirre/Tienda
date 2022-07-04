@@ -1,20 +1,21 @@
+import { Productos } from "./Productos.js";
+import { tienda } from "./Tienda.js";
 
-
-window.onload = function () {
+window.onload = function() {
     let contenedorVendedor = document.getElementById("contenido")
-contenedorVendedor.style.visibility = "hidden"
-let buttonFormularioProducto = document.getElementById ("formularioProducto")
-
-buttonFormularioProducto.onclick = function(){
     contenedorVendedor.style.visibility = "visible"
-}
-let cerrarFormulario = document.getElementById("cerrar")
-cerrarFormulario.onclick = function () {
-    contenedorVendedor.style.visibility= "hidden"
-} 
+    let buttonFormularioProducto = document.getElementById("formularioProducto")
+
+    buttonFormularioProducto.onclick = function() {
+        contenedorVendedor.style.visibility = "visible"
+    }
+    let cerrarFormulario = document.getElementById("cerrar")
+    cerrarFormulario.onclick = function() {
+        contenedorVendedor.style.visibility = "hidden"
+    }
 }
 
-    let contenedorDatosProducto = function () {
+let contenedorDatosProducto = function() {
     let id = parseFloat(document.getElementById("idProducto").value);
     let nombre = document.getElementById("nombre").value;
     let presentacion = document.getElementById("presentacionProducto").value;
@@ -23,14 +24,9 @@ cerrarFormulario.onclick = function () {
     let precio = document.getElementById("precioProducto").value;
     let categoria = parseFloat(document.getElementById("categoriaProducto").value);
 
-    document.contenido.idObtenido.value = id;
-    document.contenido.nombreOtenido.value = nombre;
-    document.contenido.presentacionObtenida.value= presentacion;
-    document.contenido.marcaObtenida = marca;
-    document.contenido.fechaVencimientoObtenida.value = fechaVencimiento;
-    document.contenido.precioObtenido.value= precio;
-    document.contenido.categoriadObtenida.value = categoria};
-
-
-
-
+    let nuevoProductoCargado = new Productos(id, nombre, presentacion, marca, fechaVencimiento, precio, categoria);
+    tienda.productos.push(nuevoProductoCargado);
+    console.log(tienda.productos.pop());
+};
+let cargar = document.getElementById("cargar");
+cargar.onclick = contenedorDatosProducto;
