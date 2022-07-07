@@ -27,6 +27,9 @@ let contenedorDatosProducto = function() {
     let nuevoProductoCargado = new Productos(id, nombre, presentacion, marca, fechaVencimiento, precio, categoria);
     tienda.productos.push(nuevoProductoCargado);
     console.log(tienda.productos.pop());
+    tienda.productos.forEach(element => {
+
+    });
 };
 let cargar = document.getElementById("cargar");
 cargar.onclick = contenedorDatosProducto;

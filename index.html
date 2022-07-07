@@ -4,11 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>ECO HOGAR</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./Css/index.css">
+    <link rel="https://mdbootstrap.com/">
+  </head>
 <body>
-    <script type="module" src="./js/Tienda.js"></script>
-    <script src="./js/formularioProducto.js"></script>
+    <header class="container-fluid bg-secondary d-flex text-right">
+        <p class="text-light mt-6mm p-10 fs-10">contactanos (057)3102659846</p>
+    </header>
+    <menu>
+        <div class="container-fluid bg-info margin-top: 5mm">
+            <div class="row"></div>
+            <h1 class="font-family">ECO HOGAR</h1>
+            <h2> <small class="text-muted">"Todo lo que necesitas en un solo lugar"</small></h3>
+                <nav class="navbar navbar-light bg-light">
+                  <div class="container">
+                      <a class="navbar-brand"></a>
+                      <form class="d-inline-flex">
+                        <input class="form-control me-2" type="search" placeholder="Que desea buscar?" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  
+                  </nav>
+
+                 
+          </div>
+    
+          <div class="container-fluid bg-light">
+            <ul class="nav justify-content-end">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="collapse" aria-expanded="false">
+                      Categorias 
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Comida</a></li>
+                      <li><a class="dropdown-item" href="#">Electrodomesticos</a></li>
+                      <li><a class="dropdown-item" href="#">Panaderia</a></li>
+                      <li><a class="dropdown-item" href="#">Aseo</a></li>
+                    </ul>
+                  </div>
+                <li class="nav-item">
+                  <a class="nav-link promociones" aria-current="page" href="#">Promociones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link misCompras" href="#">Mis Compras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link servicioAlCliente" href="#">Servicio al ciente</a>
+                </li>
+              </ul>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 offset-md-3">
+                <div class="card my-5">
+        
+                  <form action= "./input.html" method= "get" class="card-body cardbody-color p-lg-5">
+                    <div class="text-center">
+                      <img src="./imagen/login.jpg" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                        width="200px" alt="profile">
+                    </div>
+        
+                    <div class="mb-3">
+                      <label for="">Nombre<input type="text" class="form-control" id="Username" aria-describedby="emailHelp"placeholder="usuario"></label>
+                    </div>
+                    <div class="mb-3">
+                      <label for="">Contraseña<input type="password" class="form-control" id="password" placeholder="contraseña"></label>
+                    </div>
+                    <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100">Ingresar</button></div>
+                    <div id="emailHelp" class="form-text text-center mb-5 text-dark">No esta registrado? <a href="./ingreso.html" class="text-dark fw-bold"> Crear cuenta</a>
+                    </div>
+                  </form>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        </div>     
+    </menu>
+
+<footer class="text-center text-lg-start bg-light text-muted">
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+    
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i></a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i></a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i></a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i></a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i></a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i></a>
+      </div>
+    </section>
+   
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Te Ayudamos</h6>
+            <p><a href="#!" class="text-reset">Mi cuenta</a></p>
+            <p><a href="#!" class="text-reset">Seguir mi pedido</a></p>
+            <p><a href="#!" class="text-reset">Nuestras tiendas</a></p>
+            <p><a href="#!" class="text-reset">Medios de pago</a></p>
+            <p><a href="#!" class="text-reset">Metodos de entrega</a></p>
+            <p><a href="#!" class="text-reset">Terminos y condiciones</a></p>
+          </div>
+ 
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Se parte de Eco hogar</h6>
+            <p><a href="#!" class="text-reset">Nuestra empresa</a></p>
+            <p><a href="#!" class="text-reset">Proveedores</a></p>
+            <p><a href="#!" class="text-reset">Ventas</a></p>
+            <p><a href="#!" class="text-reset">Inversiones</a></p>
+          </div>
+         
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Nuestos programas</h6>
+            <p><a href="#!" class="text-reset">Club Deco</a></p>
+            <p><a href="#!" class="text-reset">Club Bebés</a></p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">contactanos</h6>
+            <p><i class="fas fa-home me-3"></i> Garagoa - Boyaca (Col)</p>
+            <p><i class="fas fa-envelope me-3"></i>ecohogar@gmail.com</p>
+            <p><i class="fas fa-phone me-3"></i>(057) 311 256 98 56)</p>
+            <p><i class="fas fa-print me-3"></i>(057) 322 658 95 74</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
     
 </body>
 </html>
